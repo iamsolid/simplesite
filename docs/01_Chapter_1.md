@@ -112,6 +112,11 @@ Now, mount your static directory to your FastAPI application (in `main.py`), so 
 ```
 app.mount("/static", StaticFiles(directory="path/to/static"), name="static")
 ```
+Be sure to import StaticFiles
+'''
+from fastapi.staticfiles import StaticFiles
+'''
+
 
 Again, change the "path/to/static" to match your app structure.
 
